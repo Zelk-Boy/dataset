@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scientific paper template for a model rocket engine comparison.">
+    <title>The Effect of Different Engine Types in a Model Rocket on Distance from Launchpad</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --page: #eef2f7;
+            --paper: #fff;
+            --ink: #263244;
+            --muted: #64748b;
+            --heading: #244b83;
+            --line: #dce3ed;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            background: var(--page);
+            color: var(--ink);
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.65;
+        }
+
+        .paper {
+            width: min(100%, 850px);
+            margin: 0 auto;
+            padding: clamp(28px, 7vw, 72px);
+            background: var(--paper);
+            border: 1px solid var(--line);
+            box-shadow: 0 12px 40px rgba(27, 44, 71, 0.09);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 28px;
+            color: var(--heading);
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            font-size: 0.88rem;
+            font-weight: 650;
+            text-underline-offset: 3px;
+        }
+
+        .paper-header {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--heading);
+            line-height: 1.3;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+        }
+
+        .byline,
+        .affiliation {
+            margin: 4px 0;
+            color: var(--muted);
+        }
+
+        h2 {
+            margin: 30px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            margin: 20px 0 6px;
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 8px 0 12px;
+        }
+
+        .keywords {
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
+        .placeholder {
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .results-chart {
+            margin: 20px 0 28px;
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .results-chart img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .results-chart figcaption {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .data-qr {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 16px 0 24px;
+            padding: 18px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: #fff;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+
+        .qr-placeholder {
+            display: grid;
+            flex: 0 0 150px;
+            aspect-ratio: 1;
+            place-items: center;
+            padding: 8px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: #fff;
+        }
+
+        .qr-placeholder img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            image-rendering: pixelated;
+        }
+
+        .data-qr p {
+            margin: 0 0 6px;
+        }
+
+        .data-qr a {
+            overflow-wrap: anywhere;
+            color: var(--heading);
+        }
+
+        .paper-footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: #fff;
+            }
+
+            .paper {
+                width: 100%;
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+            }
+
+            .back-link {
+                display: none;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .data-qr {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="paper">
+        <a class="back-link" href="index.html">&larr; Back to rocket charts</a>
+
+        <header class="paper-header">
+            <h1>The Effect of Different Engine Types in a Model Rocket on Distance from Launchpad</h1>
+            <p class="byline"><strong>Author: </strong>Eli Fenton</p>
+            <p class="affiliation"><strong>Affiliation: </strong>Student: Pyramid Project 2026-2027 [Date]</p>
+        </header>
+
+        <section aria-labelledby="abstract-heading">
+            <h2 id="abstract-heading">Abstract</h2>
+            <p class="placeholder">Different rocket engines in a model rocket affect what altitude the rocket will attain. This principle is known as “Potential Altitude”. The question is whether Potential Altitude affects drift, or the distance from the launchpad the rocket lands at. Different engines were tested, and results recorded. There were multiple launches to ensure accuracy. The three kinds of engines: A8-3, B6-4, and C6-5 were launched in the same rocket. The furthest drift was achieved by the C engine. The Drift was almost exactly proportional to the airtime achieved. The control, the A8-3, was suggested by the FAA to land within fifty feet. The B6-4 was supposedly within 200 ft; and the C6-5 was within 500 ft, and it was, but only barely.
+</p>
+            <p class="keywords"><strong>Keywords:</strong> model rocket; engine type; launch distance; FAA</p>
+        </section>
+
+        <section aria-labelledby="introduction-heading">
+            <h2 id="introduction-heading">1. Introduction</h2>
+            <p class="placeholder">The model rocket has been a tool in having fun for years. The FAA even suggests using them to learn basic aeronautics. But, people have been getting on the internet asking these questions: “How far do they go?” “Where can I launch them?” “How much space do I need?” These questions have never been answered before today. The rocket will show you.</p>
+        </section>
+
+        <section aria-labelledby="methods-heading">
+            <h2 id="methods-heading">2. Materials and Methods</h2>
+            <h3>2.1 Study Design and Setting</h3>
+            <p class="placeholder">The test was conducted over the course of two days, with 4 launches total. The test consisted of three different types of engines in the rocket being launched, and then measuring the distance from the launchpad at which they landed. The site for the test was determined to be Elkridge Park in North Logan, Utah.</p>
+
+            <h3>2.2 Materials</h3>
+            <p class="placeholder">Four engines, all made by Estes Rockets, were selected for the test. They included two A8-3 engines, one B6-4 engine, and one C6-5 engine. All were inspected and checked by the launch conductor. The rocket was assembled and checked according to local and state law. The control agent, the A8-3 engine, was expected by the manufacturer to land within a 50 ft radius of the launchpad, the B engine was expected to land within 200 ft, and the C6-5 was expected to land within 500 ft.</p>
+
+            <h3>2.3 Experimental Procedure</h3>
+            <p class="placeholder">The A8-3 was launched both days, and it was launched first. After the launch of the A engine, the trajectory of the rocket was adjusted by sight for the next launch, the B engine one day, the C engine the other</p>
+
+            <h3>2.4 Data Analysis</h3>
+            <p class="placeholder">After each launch, the distance from the launchpad to the rocket was measured, before any movement of the rocket to clear the launch zone. Measurements were recorded and averaged.</p>
+        </section>
+
+        <section aria-labelledby="results-heading">
+            <h2 id="results-heading">3. Results</h2>
+            <h3>3.1 Primary Outcome: Landing Distance From Launchpad</h3>
+            <p class="placeholder">Potential altitude may not affect horizontal travel. The C6-5 engine went the farthest, at a mean of 492 ft. The B6-4 engine averaged 25 ft., with the A8-3 averaging 26.5 ft. The C6-5 went almost due west, with the B6-4 going southwest, and the A8-3’s both going east.</p>
+            <p>Table 1: Average distance from launchpoint (average drift).</p>
+            <figure class="results-chart">
+                <img src="chart2forrocket.png" alt="Chart comparing model rocket distance from the launchpad by engine type">
+                <figcaption>Figure 1. Distance from launchpad by engine type.</figcaption>
+            </figure>
+
+            <h3>3.2 Secondary Outcomes</h3>
+            <p class="placeholder">The time each launch spent in the air is almost directly proportional to thrust and altitude potential. The C6-5 spent the most time in the air, at 2:30 minutes. The other engines both spent less, with the B6-4 at 0:40 minutes, and the A8-3 at 30 seconds.</p>
+            <figure class="results-chart">
+                <img src="chart1forrocket.png" alt="Chart comparing model rocket airtime by engine type">
+                <figcaption>Figure 2. Airtime by engine type.</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="discussion-heading">
+            <h2 id="discussion-heading">4. Discussion</h2>
+            <p class="placeholder">The Utah State Laws suggest unreasonably large areas for a class A or class B rocket engine. The radius suggested could be decreased by 10-15 ft. Air time is directly connected to average drift. </p>
+        </section>
+
+        <section aria-labelledby="conclusion-heading">
+            <h2 id="conclusion-heading">5. Conclusion</h2>
+            <p class="placeholder">Engine Thrust and Potential Altitude affect the landing point of a rocket. Change in drift distance grows exponentially with an increase of engine power. Air time is also exponentially affected by engine power. </p>
+        </section>
+
+        <section aria-labelledby="acknowledgments-heading">
+            <h2 id="acknowledgments-heading">Acknowledgments</h2>
+            <p class="placeholder">The Author thanks Estes rockets, and other faculty that supplied the rocket and engines. Many thanks to those that helped with the launch.</p>
+        </section>
+
+        <section aria-labelledby="funding-heading">
+            <h2 id="funding-heading">Funding</h2>
+            <p class="placeholder">The test was funded internally.</p>
+        </section>
+
+        <section aria-labelledby="conflict-heading">
+            <h2 id="conflict-heading">Conflict of Interest</h2>
+            <p class="placeholder">The author declares no competing interests.</p>
+        </section>
+
+        <section aria-labelledby="data-heading">
+            <h2 id="data-heading">Data Availability</h2>
+            <p>Datasets are available at <a href="https://zelk-boy.github.io/EliFentonRocketData/">zelk-boy.github.io/EliFentonRocketData</a>.</p>
+            <div class="data-qr" aria-label="QR code for the project dataset">
+                <div class="qr-placeholder"><img src="qrcode_zelk-boy.github.io.png" alt="QR code linking to the project dataset"></div>
+                <div>
+                    <p><strong>Scan to access the dataset</strong></p>
+                    <a href="https://zelk-boy.github.io/EliFentonRocketData/">https://zelk-boy.github.io/EliFentonRocketData/</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="paper-footer">Scientific paper template</footer>
+    </main>
+</body>
+</html>
